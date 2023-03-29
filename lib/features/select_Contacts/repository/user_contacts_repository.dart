@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:dreamchat/common/widget/util.dart';
+import 'package:dreamchat/common/utils/util.dart';
 import 'package:dreamchat/models/user_model.dart';
 import 'package:dreamchat/features/chats/screens/Mobile_chat_screen.dart';
 import 'package:firebase_core/firebase_core.dart';

@@ -6,7 +6,7 @@ import 'package:dreamchat/models/user_model.dart';
 import 'package:dreamchat/screens/home_screen.dart';
 import 'package:dreamchat/features/auth/screens/opt_screen.dart';
 import 'package:dreamchat/screens/userInfoScreen.dart';
-import 'package:dreamchat/common/widget/util.dart';
+import 'package:dreamchat/common/utils/util.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -124,5 +124,11 @@ class AuthRepository {
     return firestore.collection('users').doc(userId).snapshots().map(
           (event) => UserModel.fromMap(event.data()!),
         );
+  }
+
+  void setUserState(bool isOnline) async {
+    await firestore.collection('users').doc(auth.currentUser!.uid).update({
+      'isOnline': isOnline,
+    });
   }
 }

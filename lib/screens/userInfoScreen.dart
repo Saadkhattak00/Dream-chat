@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:dreamchat/common/widget/util.dart';
+import 'package:dreamchat/common/utils/util.dart';
 import 'package:dreamchat/features/auth/controller/auth_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

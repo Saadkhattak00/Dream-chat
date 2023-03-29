@@ -3,6 +3,11 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  agora_rtc_engine
+  audioplayers_windows
+  emoji_picker_flutter
+  iris_event
+  permission_handler_windows
   smart_auth
 )
 
