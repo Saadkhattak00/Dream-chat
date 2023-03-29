@@ -1,5 +1,4 @@
 import 'package:dreamchat/features/select_Contacts/screens/select_contact_screen.dart';
-import 'package:dreamchat/screens/Tab_bar_items/chat_tap.dart';
 import 'package:dreamchat/features/chats/screens/Mobile_chat_screen.dart';
 import 'package:dreamchat/screens/home_screen.dart';
 import 'package:dreamchat/features/auth/screens/login_Screen.dart';
@@ -16,7 +15,7 @@ class RouteGenerator {
     switch (settings.name) {
       case SplashScreen.routeName:
         return MaterialPageRoute(
-          builder: (context) => SplashScreen(),
+          builder: (context) => const SplashScreen(),
         );
       case LoginScreen.routeName:
         return MaterialPageRoute(
