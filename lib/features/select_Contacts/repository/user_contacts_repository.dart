@@ -50,6 +50,7 @@ class SelectContactRepository {
         }
       }
       if (!isFound) {
+        // ignore: use_build_context_synchronously
         showSnackBar(
             context: context,
             content: 'This number does not exitst on this app');
